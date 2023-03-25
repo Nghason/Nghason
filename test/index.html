@@ -6,19 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="main.js"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="input_lenght">
-        <form action="index.html" method="post">
-            <input type="text" class="arrayinput"><br>
-            <input type="text" class="arrayinput"><br>
-            <input type="text" class="arrayinput"><br>
-            <input type="text" class="arrayinput"><br>
-            <input type="text" class="arrayinput"><br>
-            <input type="text" class="arrayinput"><br>
-            <input type="text" class="arrayinput"><br>
-            <button class="btn--submit" onclick="submit()">submit</button>
+        <form id="input_lenght--form" action="index.html" method="post">
+           first: <input type="text" name="arrayinput[]">
+           second: <input type="text" name="arrayinput[]">
+           third: <input type="text" name="arrayinput[]">
+           forth: <input type="text" name="arrayinput[]">
         </form>
+    
+        <p id="par"></p>
+        <div>
+            <button class="btn--submit" onclick="submit()">submit</button>
+        </div>
+    </div>
+
+    <div class="input__number">
+        <form id="input_number--form" action="index.html" method="post">
+            first: <input type="number" name="arrayinputnumber[]">
+            second: <input type="number" name="arrayinputnumber[]">
+            third: <input type="number" name="arrayinputnumber[]">
+            forth: <input type="number" name="arrayinputnumber[]">
+         </form>
+         
+         <p id="par2"></p>
+         <p id="par3"></p>
+         <div>
+             <button class="btn--submit2" onclick="inputnumber()">submit 2</button>
+         </div>
+
+    </div>
+
+    <div class="color">
+        <div class="btn">
+            <button onclick="pickcolor()">pick color</button>
+            <button onclick="copy()">copy</button>
+        </div>
+        <input type="text" id="colorrand">
+        <form action="index.html" id="setcolorform">
+            set color: <input type="text" name="input-color">
+        </form>
+        <div>
+            <button onclick="setcolor()"> set color</button>
+        </div>
+        <p id="par5"></p>
     </div>
      <script src="main.js"></script>
 </body> 
