@@ -1,0 +1,10 @@
+version: '1'
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+    - "80:80"
+    volumes:
+    - shared_volume:/usr/share/nginx/html
+volumes:
+  shared_volume:
